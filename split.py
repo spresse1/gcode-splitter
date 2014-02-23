@@ -113,7 +113,7 @@ postfix: the gcode postfix to put at the end of each file"""
 	
 	# get the name for the new file
 	outfile_name = make_outfile(outfile_name, part, infile_full_name)
-	open(outfile_name, 'w') #open it...
+	outfile = open(outfile_name, 'w') #open it...
 	
 	#and write a prefix, if we have one
 	if prefix:
