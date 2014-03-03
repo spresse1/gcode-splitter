@@ -179,6 +179,9 @@ def split_file(infile, prefix, postfix, splits, outfile_name, infile_name):
 				
 			#whatever the line was, its body and we need to write it out
 			outfile.write(line)
+	
+	#Finally, make sure we clean up at the end.
+	outfile.write(postfix)
 		
 if __name__=='__main__':
 	import sys, re
